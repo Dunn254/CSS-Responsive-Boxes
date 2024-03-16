@@ -1,3 +1,20 @@
 body {
   background: blanchedalmond;
 }
+.a{
+  background-color: red;
+  width: 100%;
+  height: 200px;
+}
+.b{
+  background-color: blue;
+  width: 70%;
+  height: 500px;
+  float: left;
+}
+.c{
+  background-color: yellow;
+  width: 24%;
+  height: 500px;
+  float: right;
+}
