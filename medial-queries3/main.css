@@ -1,3 +1,41 @@
 body {
   background: peachpuff;
 }
+
+.a { grid-area: a; background-color: #FF5733; }
+.b { grid-area: b; background-color: #FFC300; }
+.c { grid-area: c; background-color: #DAF7A6; }
+.d { grid-area: d; background-color: #C70039; }
+.e { grid-area: e; background-color: #00CED1; }
+.f { grid-area: f; background-color: #8E44AD; }
+.g { grid-area: g; background-color: #e77d3f; }
+.h { grid-area: h; background-color: #2e95e9; }
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'a a a a'
+    'b c d h'
+    'e f g h';
+  gap: 6px;
+  background-color: #2196F3;
+  padding: 6px;
+}
+
+.container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: white; /* Add text color to improve readability */
+}
+
+/* Media query for devices with max-width of 600px */
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+        'a a a'
+        'b c d'
+        'e f g'
+        'h h h';
+    }
+}
